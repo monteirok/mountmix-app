@@ -1,0 +1,11 @@
+.svgIcon {
+    fill: #e5e5e5;
+    transition: fill 0.3s ease;
+    transition: all 500ms ease;
+}
+
+.svgIcon:hover .svgIcon:active {
+    fill: #a3a3a3;
+    scale: .95;
+    transition: all 200ms ease-in-out;
+}

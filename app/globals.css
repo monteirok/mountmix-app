@@ -1,0 +1,32 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+:root {
+  --dark: #171717;
+  --light: #e5e5e5;
+  --accent: #20697a;
+  --yellow: #f7b83d;
+  --green: #10a43390;
+  --cream: #f0e6d4;
+}
+
+* {
+  user-select: none;
+}
+
+html, body {
+  height: 100vh;
+  /* min-width: 370px; */
+}
+
+.h-calc {
+  height: calc(100% - 112px);
+}
+
+.frosted-glass {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  background-color: #17171760;
+  border-radius: 20px;
+}
