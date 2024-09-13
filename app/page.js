@@ -1,14 +1,21 @@
-import Link from "next/link";
+import Header from "./components/Header/Header";
+import Logo from "./components/Logo/LogoLight";
+import Instagram from "./components/Socials/Instagram";
 
 export default function Home() {
   return (
-    <section className='container grid grid-cols-1 gap-10 mt-20 mb-7 sm:mb-8 py-10 bg-neutral-800 frosted-glass'>
-      <h1 className='leading-header sm:leading-header-sm text-head sm:text-head-sm xl:text-head-lg font-black text-center text-neutral-200'>
-        COMING <span className='text-subhead sm:text-subhead-sm'>SOON</span>
-      </h1>
-      <p className="text-center text-neutral-200 text-2xl px-6">
-        In the meantime, visit our <Link className='font-semibold text-orange-400 hover:underline' href="https://instagram.com/mountain.mixology" target="_blank" title="@mountain.mixology">Instagram</Link> for the latest updates.
-      </p>
-      </section>
+    <section className="flex justify-center items-center h-calc overflow-hidden">
+      <div className="container grid grid-cols-1 gap-6 sm:gap-8 py-8 px-5 sm:px-6 frosted-glass">
+        <Header text="ABOUT US" />
+        {/* <Logo /> */}
+        <p className="px-6 sm:px-10 text-center text-neutral-200 text-lg sm:text-xl xl:text-2xl">
+        Welcome to <b>Mountain Mixology</b>, the premier cocktail catering service in Canmore, AB. We specialize in crafting bespoke, high-quality cocktails that add style and sophistication to any event. From intimate gatherings to large celebrations, our creativity and expertise ensure every experience is unique and unforgettable.
+          {/* Visit our <Link className='link' href="https://instagram.com/mountain.mixology" target="_blank" title="@mountain.mixology">Instagram</Link> for the latest updates. */}
+        </p>
+        <span className="flex justify-center items-center pt-2 pb-5">
+          <Instagram />
+        </span>
+      </div>
+    </section>
   );
 }

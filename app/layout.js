@@ -1,11 +1,12 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Navbar from "./components/Navbar/Navbar";
-import Footer from "./components/Footer/Footer";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
+const roboto = Roboto({ subsets: ["latin"], weight: ['100', '300', '400', '500', '700', '900'] });
 
 export const metadata = {
   title: "Mountain Mixology",
